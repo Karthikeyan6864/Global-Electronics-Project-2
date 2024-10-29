@@ -1,7 +1,7 @@
-## Project Report: Sales Data Processing, Transformation, and Analysis
+## Project Report: Sales Data Processing, Transformation, and Analysis of Global electronics dataset
 
 ### Project Objective
-The goal of this project is to process, transform, and analyze sales, customer, product, store, and exchange rate data for a company. The final deliverable is a structured MySQL database, with additional insights generated through SQL queries.
+The goal of this project is to process, transform, and analyze sales, customer, product, and store data for Global Electronics. The final deliverable is a structured MySQL database, with additional insights generated through SQL queries and a power Bi dashboard.
 
 ---
 
@@ -14,7 +14,6 @@ The goal of this project is to process, transform, and analyze sales, customer, 
   - `Sales.csv`
   - `Products.csv`
   - `Stores.csv`
-  - `Exchange_Rates.csv`
   
 - Used Python’s `pandas` library for initial data loading and processing.
 
@@ -23,7 +22,7 @@ The goal of this project is to process, transform, and analyze sales, customer, 
 #### 2. Data Merging
 
 - Merged datasets to create a unified DataFrame (`merged_df`) with relevant information.
-- Performed **left joins** on common keys like `CustomerKey`, `ProductKey`, `StoreKey`, and specific columns for exchange rates (e.g., `Order Date` and `Currency Code`).
+- Performed **left joins** on common keys like `CustomerKey`, `ProductKey`and`StoreKey`.
 
 ---
 
@@ -40,9 +39,6 @@ The goal of this project is to process, transform, and analyze sales, customer, 
 - Converted cost-related columns to numerical formats to enable financial calculations.
 - Derived key metrics:
   - `Gross Profit`
-  - `Gross Profit Margin (%)`
-  - `Markup (%)`
-
 ---
 
 #### 5. Outlier Detection
